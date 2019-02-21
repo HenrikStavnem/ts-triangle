@@ -30,9 +30,9 @@ class HstApp {
             side3 = $( "#hst-triangle-input-3" ).val();
 
         return {
-            side1: parseInt( side1 ), // parse string values to integers
-            side2: parseInt( side2 ),
-            side3: parseInt( side3 )
+            side1: parseFloat( side1 ), // parse string values to integers
+            side2: parseFloat( side2 ),
+            side3: parseFloat( side3 )
         };
     }
 
@@ -47,15 +47,12 @@ class HstApp {
             return "nonpositive";
 
         // Check if all three sides have been filled out
-        debugger;
-
         if (isNaN(side1) || isNaN(side2) || isNaN(side3))
             return "empty";
 
         /*
             A possible triangle must obey the Triangle Inequality Theorem:
             The sum of any two sides of a triangle must be greater than the measure of the third side.
-            We check if
         */
         if ( (side1 + side2 <= side3) || (side1 + side3 <= side2) || (side2 + side3 <= side1) )
             return "impossible";
