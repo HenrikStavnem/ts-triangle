@@ -1,0 +1,54 @@
+#validation-box {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+    border-radius: 3px;
+
+    color: #ffffff;
+    box-shadow: 0 2px 2px rgba(0,0,0,.1), 0 2px 8px rgba(0,0,0,.05);
+    user-select: none;
+    cursor: default;
+}
+#validation-box.unvalidated {
+    background: rgba(210,210,210,1);
+    background: -moz-linear-gradient(top, rgba(210,210,210,1) 0%, rgba(95,95,95,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(210,210,210,1) 0%, rgba(95,95,95,1) 100%);
+    background: -o-linear-gradient(top, rgba(210,210,210,1) 0%, rgba(95,95,95,1) 100%);
+    background: -ms-linear-gradient(top, rgba(210,210,210,1) 0%, rgba(95,95,95,1) 100%);
+    background: linear-gradient(to bottom, rgba(210,210,210,1) 0%, rgba(95,95,95,1) 100%);
+}
+#validation-box.valid {
+    background: rgba(108,212,0,1);
+    background: -moz-linear-gradient(top, rgba(108,212,0,1) 0%, rgba(15,147,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(108,212,0,1) 0%, rgba(15,147,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(108,212,0,1) 0%, rgba(15,147,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(108,212,0,1) 0%, rgba(15,147,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(108,212,0,1) 0%, rgba(15,147,0,1) 100%);
+}
+#validation-box.invalid {
+    background: rgba(208,34,0,1);
+    background: -moz-linear-gradient(top, rgba(208,34,0,1) 0%, rgba(114,0,54,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(208,34,0,1) 0%, rgba(114,0,54,1) 100%);
+    background: -o-linear-gradient(top, rgba(208,34,0,1) 0%, rgba(114,0,54,1) 100%);
+    background: -ms-linear-gradient(top, rgba(208,34,0,1) 0%, rgba(114,0,54,1) 100%);
+    background: linear-gradient(to bottom, rgba(208,34,0,1) 0%, rgba(114,0,54,1) 100%);
+}
+
+#validation-box-icon {
+    position: relative;
+    top: 20px;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+#validation-box-text {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}

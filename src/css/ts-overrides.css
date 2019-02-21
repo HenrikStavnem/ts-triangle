@@ -1,0 +1,4 @@
+.ts-form .ts-fieldset>label.ts-haslabel, .ts-form.ts-fieldset>label.ts-haslabel, .ts-form.ts-label>label.ts-haslabel {
+    user-select: none;
+    cursor: default;
+}

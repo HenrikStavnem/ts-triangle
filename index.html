@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Henrik Stavnem &mdash; Tradeshift</title>
+		<meta name="viewport" content="width=device-width"/>
+		<meta name="ts-app-title" content="Henrik Stavnem"/>
+		<link rel="ts-app-icon" href="res/imgs/me.jpg"/>
+
+        <link rel="stylesheet" href="http://d5wfroyti11sa.cloudfront.net/prod/client/ts-12.0.1.min.css"/>
+        <script src="http://d5wfroyti11sa.cloudfront.net/prod/client/ts-12.0.1.min.js"></script>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js" data-cfasync="false" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="src/css/hst-validation-box.css"/>
+		<link rel="stylesheet" href="src/css/ts-overrides.css"/>
+        <script src="src/js/app.js"></script>
+	</head>
+	<body>
+		<div data-ts="App">
+			<div data-ts="Main">
+				<div data-ts="Content">
+					<div data-ts="Panel">
+
+                        <div data-ts="Board" style='width: 500px; margin-left: auto; margin-right: auto;'>
+                        	<div data-ts="Panel">
+
+								<div id='validation-box' class='unvalidated'>
+									<div id='validation-box-icon'>
+									</div>
+									<div id='validation-box-text'></div>
+								</div>
+
+                                <form data-ts="Form">
+                                	<fieldset>
+                                		<label>
+                                			<span>Side 1</span>
+                                			<input type="number" id='hst-triangle-input-1' class='hst-triangle-input' />
+                                		</label>
+
+                                        <label>
+                                			<span>Side 2</span>
+                                			<input type="number" id='hst-triangle-input-2' class='hst-triangle-input' />
+                                		</label>
+
+                                        <label>
+                                			<span>Side 3</span>
+                                			<input type="number" id='hst-triangle-input-3' class='hst-triangle-input' />
+                                		</label>
+                                	</fieldset>
+                                </form>
+
+								<div data-ts="Note">
+                                	<i class="ts-icon-info"></i>
+                                	<p>Please input values for the sides of the triangle.<br />Results will be displayed automatically.</p>
+                                </div>
+
+                        	</div>
+                        </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
